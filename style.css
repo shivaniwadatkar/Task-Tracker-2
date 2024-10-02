@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+.task-app{
+    width:100%;
+    max-width: 400px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px ,30px , 70px;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+.task-app h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.task-app h2 img{
+    margin-top: 10px;
+    width:28px;
+    height: 28px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    height: 35px;
+}
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    height:25px;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 8px 30px;
+    background-color: midnightblue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    margin-bottom: 1px;
+    position: relative;
+    margin-left: 10px;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width:28px;
+    margin-left: -40px;
+    margin-top: -3px;
+    border-radius: 50%;
+    background-image: url(https://icons.veryicon.com/png/o/miscellaneous/basic-icon-5/unchecked-41.png);
+    background-size: cover;
+    background-position: center;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM0Gm5e0xMvG7tBUjIMPrmeVlZkRzCzaNLBA&s);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    left: 320px;
+    top:3px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background-color: #edeef0;
+}
